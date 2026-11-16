@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'range_screen.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
   @override
@@ -11,9 +13,9 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 3),
+      const Duration(seconds: 5),
         () {
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomeScreen(),
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const RangeScreen(),
         ),
         );
         },
